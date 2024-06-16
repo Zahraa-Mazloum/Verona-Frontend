@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/GP0yYwpqDpN7_5IidOW6P/_buildManifest.js",
-    "static/GP0yYwpqDpN7_5IidOW6P/_ssgManifest.js"
+    "static/9fEmleROJQMheognOxV84/_buildManifest.js",
+    "static/9fEmleROJQMheognOxV84/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -27,17 +27,17 @@
       "static/chunks/framework-e56d9f6f66453ae1.js",
       "static/chunks/main-5e02cf890bd3702f.js",
       "static/chunks/29107295-fbcfe2172188e46f.js",
-      "static/chunks/44-07f4483e47a9ecad.js",
+      "static/chunks/44-f168deb112bed47b.js",
       "static/chunks/942-17e2be1b2355db48.js",
-      "static/chunks/330-d3f7168819aac79c.js",
+      "static/chunks/330-ea2bd3976314f102.js",
       "static/chunks/290-bc8fe17a9c1a10d0.js",
-      "static/chunks/pages/[locale]-d11338f81026792f.js"
+      "static/chunks/pages/[locale]-47a3d87f0fc7905c.js"
     ],
     "/[locale]/404": [
       "static/chunks/webpack-f14b651eac54a945.js",
       "static/chunks/framework-e56d9f6f66453ae1.js",
       "static/chunks/main-5e02cf890bd3702f.js",
-      "static/chunks/44-07f4483e47a9ecad.js",
+      "static/chunks/44-f168deb112bed47b.js",
       "static/chunks/942-17e2be1b2355db48.js",
       "static/chunks/290-bc8fe17a9c1a10d0.js",
       "static/chunks/pages/[locale]/404-b4c714886bee33e7.js"
@@ -46,7 +46,7 @@
       "static/chunks/webpack-f14b651eac54a945.js",
       "static/chunks/framework-e56d9f6f66453ae1.js",
       "static/chunks/main-5e02cf890bd3702f.js",
-      "static/chunks/44-07f4483e47a9ecad.js",
+      "static/chunks/44-f168deb112bed47b.js",
       "static/chunks/942-17e2be1b2355db48.js",
       "static/chunks/214-1663174609050294.js",
       "static/chunks/290-bc8fe17a9c1a10d0.js",
@@ -56,9 +56,9 @@
       "static/chunks/webpack-f14b651eac54a945.js",
       "static/chunks/framework-e56d9f6f66453ae1.js",
       "static/chunks/main-5e02cf890bd3702f.js",
-      "static/chunks/44-07f4483e47a9ecad.js",
+      "static/chunks/44-f168deb112bed47b.js",
       "static/chunks/214-1663174609050294.js",
-      "static/chunks/282-a7d2a01c5ad5acdd.js",
+      "static/chunks/282-e0307a12f72ed6c8.js",
       "static/chunks/pages/[locale]/contact-42932795538cb04e.js"
     ],
     "/_app": [
