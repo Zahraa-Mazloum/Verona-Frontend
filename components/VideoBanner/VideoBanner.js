@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import PlayIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
-import SendIcon from '@mui/icons-material/Send';
+// import SendIcon from '@mui/icons-material/Send';
 import YouTube from 'react-youtube';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -105,10 +105,10 @@ function VideoBanner() {
               <Typography className={cx(classes.subtitle, text.subtitle, '  Bsubtitle')} variant="h5">
                 {t('agency-landing.banner_subtitle')}
               </Typography>
-              <Button variant="outlined" size="large" color="secondary" className={classes.button}>
+              {/* <Button variant="outlined" size="large" color="secondary" className={classes.button}>
                 {t('agency-landing.banner_button')}
                 <SendIcon className={classes.icon} />
-              </Button>
+              </Button> */}
             </div>
           </Grid>
           {isTablet && (

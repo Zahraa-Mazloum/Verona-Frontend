@@ -72,6 +72,12 @@ const useStyles = makeStyles({ uniqId: 'about' })((theme) => ({
     top: 90,
     left: 90
   },
+  subTtl: {
+    fontSize: 22,
+    textAlign: 'justify !important',
+    padding: 0,
+    width: '100%',
+}
 }));
 
 // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.
