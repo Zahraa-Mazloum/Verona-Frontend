@@ -11,9 +11,6 @@ module.exports = {
     locales: ['en', 'ar'],
     fallbackLng: 'en'
   },
-  experimental: {
-    scriptDisabled: true
-  },
   ssg: true
 };
 
