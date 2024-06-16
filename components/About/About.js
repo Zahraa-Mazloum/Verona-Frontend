@@ -26,7 +26,7 @@ function About() {
             </div>
           </Grid>
           <Grid item md={7} xs={12}>
-            <Typography className={cx(title.default, text.subtitle, classes.subTtl)} variant="body1">
+            <Typography className={cx(title.default, text.subtitle, classes.subTtl)} variant="p">
               <Typewriter
                 options={{
                   strings: [t('agency-landing.about_subtitle')],
