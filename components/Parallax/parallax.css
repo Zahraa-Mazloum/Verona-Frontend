@@ -1,0 +1,48 @@
+/* parallax-style.js or your CSS file */
+
+.parallaxWrap {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../public/images/aboutus.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .innerParallax {
+    position: absolute; /* Use absolute positioning to overlay on top of fixed background */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parallaxSquare {
+    position: relative;
+    width: 405px;
+    height: 405px;
+    border-radius: 50%;
+  }
+  
+  .parallaxPrimary {
+    /* Styles for primary parallax element */
+    background: url('path_to_your_primary_image') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .parallaxSecondary {
+    /* Styles for secondary parallax element */
+    background: url('path_to_your_secondary_image') no-repeat center center;
+    background-size: cover;
+  }
+  
