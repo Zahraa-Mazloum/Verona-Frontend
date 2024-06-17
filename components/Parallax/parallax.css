@@ -3,7 +3,7 @@
 .parallaxWrap {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
+    height: 100vh; 
     overflow: hidden;
   }
   
@@ -19,7 +19,7 @@
   }
   
   .innerParallax {
-    position: absolute; /* Use absolute positioning to overlay on top of fixed background */
+    position: absolute; 
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,17 +32,5 @@
     width: 405px;
     height: 405px;
     border-radius: 50%;
-  }
-  
-  .parallaxPrimary {
-    /* Styles for primary parallax element */
-    background: url('path_to_your_primary_image') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .parallaxSecondary {
-    /* Styles for secondary parallax element */
-    background: url('path_to_your_secondary_image') no-repeat center center;
-    background-size: cover;
   }
   

@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
-import Carousel from 'react-slick';
 import { useSpring, animated } from 'react-spring';
 import { useTranslation } from 'next-i18next';
 import { useText } from 'theme/common';
@@ -14,15 +13,7 @@ import useTitle from '../Title/title-style';
 import TitleDeco from '../Title/WithDecoration';
 
 const expertiseList = [
-  ['social media', 'marketing', 'SEO'],
-  ['Web Development', 'UI Designs', 'Mobile Apps'],
-  ['Photography', 'Company Profile', 'Visual Editing'],
-  ['social media', 'marketing', 'SEO'],
-  ['Web Development', 'UI Designs', 'Mobile Apps'],
-  ['Photography', 'Company Profile', 'Visual Editing'],
-  ['social media', 'marketing', 'SEO'],
-  ['Web Development', 'UI Designs', 'Mobile Apps'],
-  ['Photography', 'Company Profile', 'Visual Editing'],
+  ['Continuous Development', 'Building Accomplished Cadres', 'Professionalism', 'Innovation and Community Impact', 'Individual-Centric Approach'],
 ];
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
@@ -36,27 +27,12 @@ function Expertise() {
   const theme = useTheme();
   const { classes: text } = useText();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-
-  // Translate Function
+  // const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const { t } = useTranslation('common');
-
   const { classes, cx } = useStyles();
   const { classes: title } = useTitle();
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    centerMode: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    vertical: true
-  };
   const [position, setPosition] = useSpring(() => ({ xy: [0, 0], config: { mass: 50, tension: 550, friction: 140 } }));
-  
+
   useEffect(() => {
     setLoaded(true);
   }, []);
@@ -120,23 +96,26 @@ function Expertise() {
               <Typography className={cx(classes.desc, text.paragraph)}>
                 {t('agency-landing.expertise_paragraph')}
               </Typography>
-              {!isTablet && (
-                <div className={classes.runningTag}>
-                  <Carousel {...settings}>
-                    {expertiseList.map((group, indexGroup) => (
-                      <div className={classes.tagGroup} key={indexGroup.toString()}>
-                        {group.map((item, indexChild) => (
-                          <span className={classes.tagItem} key={indexChild.toString()}>{item}</span>
-                        ))}
-                      </div>
+              <div className={classes.tagGroup}>
+                {expertiseList.map((group, indexGroup) => (
+                  <div key={indexGroup.toString()} className={classes.tagContainer}>
+                    {group.map((item, indexChild) => (
+                      <span
+                        key={indexChild.toString()}
+                        className={cx(
+                          classes.tagItem,
+                          indexChild % 2 === 0 ? classes.tagItemOrange : classes.tagItemWhite
+                        )}
+                      >
+                        {t(item)}
+                      </span>
                     ))}
-                  </Carousel>
-                </div>
-              )}
+                  </div>
+                ))}
+              </div>
             </Grid>
           </Grid>
         </Container>
-        
       </div>
     </Fragment>
   );

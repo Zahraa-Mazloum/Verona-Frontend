@@ -92,45 +92,47 @@ const useStyles = makeStyles({ uniqId: 'expertise' })((theme, _params, classes) 
     top: 50,
     background: `url(${blueBuble}) no-repeat`,
   },
-  runningTag: {
-    position: 'relative',
-    height: 130,
-    padding: theme.spacing(0, 4),
-    '& div[class*="slick-active"]': {
-      [`& .${classes.tagItem}`]: {
-        background: theme.palette.primary.main,
-        color: theme.palette.common.white,
-        borderColor: theme.palette.primary.main,
-      }
-    },
-    '& div[class*="slick-current"]': {
-      [`& .${classes.tagItem}`]: {
-        background: 'none !important',
-        color: `${theme.palette.text.primary} !important`,
-        borderColor: `${theme.palette.divider} !important`,
-      }
-    },
+  tagGroup: {
+    marginTop: theme.spacing(2),
+  },
+  tagContainer: {
+    marginBottom: theme.spacing(1),
   },
   tagItem: {
     display: 'inline-block',
     borderRadius: 4,
     textTransform: 'capitalize',
-    transition: 'all 0.3s ease-in',
-    border: `1px solid ${theme.palette.divider}`,
+    padding: theme.spacing(0.5, 2),
     marginRight: theme.spacing(1),
     marginBottom: theme.spacing(1.5),
-    padding: theme.spacing(0.5, 1),
-    [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(0.5, 4),
-    },
+    border: '1px solid transparent',
+    transition: 'all 0.3s ease-in',
   },
-  tagGroup: {
-    display: 'block',
-    '&:focus': {
-      outline: 'none'
+  tagItemWhite: {
+    background: 'white',
+    color: 'black',
+    borderColor: '#f16c21',
+    borderRadius: 15,
+    '&:hover': {
+      background: '#f3a64a',
+      color: 'black',
+      borderColor: 'white',
+
+    }
+  },
+
+  tagItemOrange: {
+    background: '#f16c21',
+    color: theme.palette.common.white,
+    borderColor: theme.palette.primary.main,
+    borderRadius: 15,
+    '&:hover': {
+      background: '#f3a64a',
+      color: 'black',
+      borderColor: 'white',
+
     }
   },
 }));
 
-// TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.
 export default useStyles;

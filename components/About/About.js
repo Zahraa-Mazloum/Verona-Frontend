@@ -31,9 +31,9 @@ function About() {
                 options={{
                   strings: [t('agency-landing.about_subtitle')],
                   autoStart: true,
-                  loop: true,
-                  delay: 50,
-                  deleteSpeed: 30,
+                  // loop: true,
+                  delay: 25,
+                  deleteSpeed: Infinity,
                 }}
               />
             </Typography>
