@@ -144,12 +144,21 @@ const useStyles = makeStyles({ uniqId: 'cards' })((theme, _params, classes) => (
           '& p': {
             opacity: 1,
             bottom: 0
+          },
+          [`& .${classes.desc}`]: {
+            // opacity: 1,
+            display: 'block',
+            fontSize: '15px'
           }
         }
       }
     }
   },
-  desc: {},
+  desc: {
+    // opacity: 0, // Hide the desc by default
+    display: 'none',
+    transition: 'opacity 0.3s ease-out', // Transition effect for opacity
+  },
   property: {
     transition: 'all 0.3s ease-out',
     position: 'absolute',
@@ -175,21 +184,8 @@ const useStyles = makeStyles({ uniqId: 'cards' })((theme, _params, classes) => (
     [`& .${classes.title}`]: {
       [theme.breakpoints.up('lg')]: {
         display: 'flex',
-      }
-    },
-    [`& .${classes.logo}`]: {
-      width: 64,
-      height: 64,
-      background: `url(${frameDeco}) no-repeat`,
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      marginRight: theme.spacing(2),
-      backgroundSize: '100%',
-      [theme.breakpoints.down('lg')]: {
-        display: 'none'
-      },
-      '& img': {
-        display: 'block'
+        paddingBottom: '50%',
+        textAlign: 'center',
       }
     },
     '& h6': {

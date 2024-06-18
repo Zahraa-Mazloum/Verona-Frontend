@@ -13,7 +13,9 @@ const logos = [
 function CompanyLogo() {
   const { classes } = useStyles();
   return (
+
     <div className={classes.root}>
+      <h1>tesrting</h1>
       <div className={classes.logo}>
         {logos.map((logo, index) => (
           <img src={logo} alt={'logo' + index.toString()} key={index.toString()} />

@@ -71,21 +71,17 @@ function MapAdress() {
                   </Typography>
                   <Grid container>
                     <Grid item sm={6} xs={12}>
-                      <PhoneIcon className={classes.icon} />
-                      +123 456 78 91
-                    </Grid>
-                    <Grid item sm={6} xs={12}>
                       <EmailIcon className={classes.icon} />
-                      hello@luxi.com
+                      info@veronaai
                     </Grid>
                     <Grid item xs={12}>
                       <LocationIcon className={classes.icon} />
-                      Lorem ipsum street no.14 Block A
+                      Abu Dhabi, UAE
                     </Grid>
                   </Grid>
                 </Paper>
               </ScrollAnimation>
-              <ScrollAnimation
+              {/* <ScrollAnimation
                 animateOnce
                 animateIn="fadeInLeftShort"
                 offset={-100}
@@ -111,7 +107,7 @@ function MapAdress() {
                     </Grid>
                   </Grid>
                 </Paper>
-              </ScrollAnimation>
+              </ScrollAnimation> */}
             </div>
           </Grid>
           <Grid item md={6} xs={12}>

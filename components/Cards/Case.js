@@ -8,7 +8,6 @@ function Case(props) {
   const { classes, cx } = useStyles();
   const {
     bg,
-    logo,
     title,
     desc,
     size,
@@ -26,21 +25,22 @@ function Case(props) {
     }
   };
   return (
+
     <ButtonBase
       className={cx(classes.caseCard, setSize(size))}
       focusRipple
       onClick={openPopup}
     >
       <span className={classes.figure}>
-        <img src={simple ? logo : bg} alt="img" />
+        <img src={bg} alt="img" />
       </span>
       <span className={cx(classes.property, simple && classes.fullHide)}>
         <span className={classes.title}>
-          {!simple && (
+          {/* {!simple && (
             <span className={classes.logo}>
               <img src={logo} alt="logo" />
             </span>
-          )}
+          )} */}
           <Typography component="span" className={classes.title}>
             {title}
           </Typography>
@@ -55,7 +55,6 @@ function Case(props) {
 
 Case.propTypes = {
   bg: PropTypes.string,
-  logo: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   size: PropTypes.string,

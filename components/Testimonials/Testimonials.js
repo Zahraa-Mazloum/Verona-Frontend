@@ -7,7 +7,7 @@ import { useTranslation } from 'next-i18next';
 import imgAPI from 'public/images/imgAPI';
 import TestimonialCard from '../Cards/Testimonial';
 import TitleIcon from '../Title/WithIcon';
-import CompanyLogo from '../CompanyLogo';
+// import CompanyLogo from '../CompanyLogo';
 import SquareParallax from '../Parallax/SingleSquare';
 import useStyle from './testi-style';
 
@@ -141,7 +141,7 @@ function Testimonials() {
           </div>
         </Container>
       </div>
-      <CompanyLogo />
+      {/* <CompanyLogo /> */}
     </div>
   );
 }
